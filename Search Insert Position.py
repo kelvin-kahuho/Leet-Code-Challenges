@@ -16,5 +16,14 @@ class Solution:
                     index = nums.index(target)
                     return index
         return None
-                
-                
+
+"""
+BEST PRACTICES
+"""
+#i Still don't understand how the problem is solved using this method
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        for i in range(len(nums)):
+            if target <= nums[i]:
+                return i
+        return len(nums)                
